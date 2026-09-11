@@ -6,12 +6,61 @@ These are small, reusable skills I lean on across projects. They run in Claude C
 
 ## Install
 
+There are two ways to run these, and which one you use depends on where you run Claude.
+
+**1. Claude Code CLI (terminal).** Use the plugin system:
+
 ```bash
 /plugin marketplace add renaissancerachel/skills
 /plugin install essentials@renaissancerachel
+/plugin install ux@renaissancerachel
 ```
 
-You can also skip the plugin system entirely and just copy any `SKILL.md` folder into `~/.claude/skills/`.
+Pull later updates with `/plugin marketplace update renaissancerachel`.
+
+**2. Claude desktop app, or any machine where you want one editable source.** The desktop app loads skills from `~/.claude/skills/` and does not use the plugin system (`/plugin` is a CLI-only feature). So you link each skill folder from a local clone of this repo into `~/.claude/skills/`. See [Run from one source](#run-from-one-source) below. This keeps the repo as the single copy you ever edit.
+
+You can always fall back to copying a `SKILL.md` folder into `~/.claude/skills/` by hand, but a copy drifts out of date. Linking does not.
+
+## Run from one source
+
+The goal: one clone of this repo is the single source of truth, and every machine points its `~/.claude/skills/` entries at that clone. Edit once, and every surface on that machine sees the change. Update with one `git pull`.
+
+**One-time setup per machine:**
+
+1. **Clone the repo to a local path** (not a cloud-synced folder like OneDrive, iCloud, or Dropbox, which can turn the files into placeholders and break the links):
+
+   ```bash
+   git clone https://github.com/renaissancerachel/skills.git
+   ```
+
+2. **Link each skill folder into `~/.claude/skills/`.** A skill must sit one level down (`~/.claude/skills/<name>/SKILL.md`), so link each skill individually rather than the whole repo.
+
+   macOS / Linux (symlink):
+   ```bash
+   ln -s /path/to/skills/plugins/essentials/skills/simple     ~/.claude/skills/simple
+   ln -s /path/to/skills/plugins/essentials/skills/checkpoint ~/.claude/skills/checkpoint
+   ln -s /path/to/skills/plugins/ux/skills/rux                ~/.claude/skills/rux
+   ```
+
+   Windows (directory junction, no admin needed), in PowerShell:
+   ```powershell
+   New-Item -ItemType Junction -Path "$HOME\.claude\skills\simple"     -Target "C:\path\to\skills\plugins\essentials\skills\simple"
+   New-Item -ItemType Junction -Path "$HOME\.claude\skills\checkpoint" -Target "C:\path\to\skills\plugins\essentials\skills\checkpoint"
+   New-Item -ItemType Junction -Path "$HOME\.claude\skills\rux"        -Target "C:\path\to\skills\plugins\ux\skills\rux"
+   ```
+
+3. **Link any slash commands you want** the same way, into `~/.claude/commands/` (each is a single `.md` file):
+
+   macOS / Linux:
+   ```bash
+   ln -s /path/to/skills/plugins/essentials/commands/simple.md     ~/.claude/commands/simple.md
+   ln -s /path/to/skills/plugins/essentials/commands/checkpoint.md ~/.claude/commands/checkpoint.md
+   ```
+
+**Updating, any machine:** `git pull` in the clone. The links already point at it, so the update lands everywhere on that machine at once. Nothing to re-copy.
+
+**Note on `~/.claude/skills` vs `~/.claude/commands`:** a skill is model-invokable (Claude reaches for it on its own) and lives in `skills/`. A command is the `/name` shortcut you type and lives in `commands/`. Many skills ship both forms; link whichever you want on a given machine.
 
 ## Status
 
@@ -33,16 +82,16 @@ You can also skip the plugin system entirely and just copy any `SKILL.md` folder
 The repo follows the Claude Code marketplace format so it can be installed as a plugin:
 
 - `.claude-plugin/marketplace.json` is the marketplace manifest. It names the marketplace (`renaissancerachel`) and lists the plugins it offers.
-- `plugins/` holds each plugin. Right now there is one, `essentials`.
-- `plugins/essentials/.claude-plugin/plugin.json` is that plugin's manifest.
-- `plugins/essentials/skills/` holds the skills (each in its own folder with a `SKILL.md`).
-- `plugins/essentials/commands/` holds the matching slash commands (`/simple`, `/checkpoint`).
+- `plugins/` holds each plugin (`essentials`, `ux`, with more being added).
+- `plugins/<plugin>/.claude-plugin/plugin.json` is that plugin's manifest.
+- `plugins/<plugin>/skills/` holds the skills (each in its own folder with a `SKILL.md`).
+- `plugins/<plugin>/commands/` holds the matching slash commands.
 
 A skill and its slash command do the same thing in two forms: the `SKILL.md` is model-invokable and uploadable to the Claude apps, and the command is the `/name` shortcut you type in Claude Code.
 
 ## Versioning
 
-When I ship changes, I bump the `version` in both `.claude-plugin/marketplace.json` and `plugins/essentials/.claude-plugin/plugin.json`. To pull updates on your machine, run:
+When I ship changes, I bump the `version` of the affected plugin in both `.claude-plugin/marketplace.json` and that plugin's `plugins/<plugin>/.claude-plugin/plugin.json`. To pull updates on your machine, run:
 
 ```bash
 /plugin marketplace update renaissancerachel
