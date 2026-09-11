@@ -16,6 +16,12 @@
       "source": "./plugins/ux",
       "description": "Rapid UX heuristic audit of a website or page.",
       "version": "0.1.0"
+    },
+    {
+      "name": "workspace-cleanup",
+      "source": "./plugins/workspace-cleanup",
+      "description": "Keep a workspace's context fresh: audit, doc-diet, config-bootstrap, asset-reconcile, and migration-plan, behind one router.",
+      "version": "0.1.0"
     }
   ]
 }

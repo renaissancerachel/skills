@@ -1,0 +1,9 @@
+{
+  "name": "workspace-cleanup",
+  "description": "Keep a workspace's context fresh: audit, doc-diet, config-bootstrap, asset-reconcile, and migration-plan, behind one router.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rachel E. Miles",
+    "url": "https://github.com/renaissancerachel"
+  }
+}
