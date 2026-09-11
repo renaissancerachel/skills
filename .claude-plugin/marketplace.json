@@ -10,6 +10,12 @@
       "source": "./plugins/essentials",
       "description": "Everyday context-management skills: a plain-language summarizer and a pre-compaction checkpoint.",
       "version": "0.1.0"
+    },
+    {
+      "name": "ux",
+      "source": "./plugins/ux",
+      "description": "Rigorous UX heuristic audit of a website or page.",
+      "version": "0.1.0"
     }
   ]
 }
