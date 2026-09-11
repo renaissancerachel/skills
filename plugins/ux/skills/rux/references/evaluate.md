@@ -100,7 +100,8 @@ Here is how it does, area by area:
 - [the two or three lowest areas, each with one concrete, kind fix]
 
 [evaluate disclaimer from voice.md]
-[optional CTA {{researcher_offer}} from voice.md - omit entirely if unset]
+[inbound offer from voice.md]
+[signature footer from voice.md]
 ```
 
 ## Filling the scorecard

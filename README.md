@@ -19,7 +19,7 @@ You can also skip the plugin system entirely and just copy any `SKILL.md` folder
 | --- | --- | --- |
 | simple | Summarize everything in plain terms with just enough context to decide, and spell out what's needed back | Stable |
 | checkpoint | Get the session to a clean stopping point before the context window compacts | Stable |
-| rux | Rigorous 30-criterion UX heuristic audit of a site or page | Stable |
+| rux | Rapid 30-criterion UX heuristic audit of a site or page | Stable |
 
 ### Coming soon
 

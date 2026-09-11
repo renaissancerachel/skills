@@ -14,7 +14,7 @@
     {
       "name": "ux",
       "source": "./plugins/ux",
-      "description": "Rigorous UX heuristic audit of a website or page.",
+      "description": "Rapid UX heuristic audit of a website or page.",
       "version": "0.1.0"
     }
   ]

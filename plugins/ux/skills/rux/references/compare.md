@@ -44,10 +44,11 @@ Audience: [x] · Goal: [x]
 - [the two or three highest-leverage moves, ordered]
 
 [compare disclaimer from voice.md]
-[optional CTA {{researcher_offer}} from voice.md - omit entirely if unset]
+[inbound offer from voice.md]
+[signature footer from voice.md]
 ```
 
-In friendly register, keep it plain and close with the optional CTA from `voice.md` when one is set. In pro register, keep it as a competitive research read with no pitch.
+In friendly register, keep it plain and close with the disclaimer plus the inbound offer from `voice.md`. In pro register, keep it as a competitive research read with no offer.
 
 ## Honesty guardrail
 

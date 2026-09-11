@@ -34,10 +34,11 @@ Persona: [one or two lines - who they are, why they are here]
 [honest read on whether they complete the goal, and what most stands in the way]
 
 [simulate disclaimer from voice.md]
-[optional CTA {{researcher_offer}} from voice.md - omit entirely if unset]
+[inbound offer from voice.md]
+[signature footer from voice.md]
 ```
 
-In pro register, drop the warmth and keep it as a research estimate. In friendly register, keep it plain and encouraging, and close with the optional CTA from `voice.md` when one is set.
+In pro register, drop the warmth and keep it as a research estimate, no offer. In friendly register, keep it plain and encouraging, and close with the disclaimer plus the inbound offer from `voice.md`.
 
 ## Honesty guardrail
 

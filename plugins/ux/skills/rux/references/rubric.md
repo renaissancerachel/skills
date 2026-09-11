@@ -1,6 +1,6 @@
 # RUX Rubric - the scoring engine
 
-The Rigorous UX rubric. 10 categories, 3 criteria each, 30 criteria total. Each criterion is scored 0-3. Categories total `/9`, the page totals `/90`.
+The Rapid UX rubric. 10 categories, 3 criteria each, 30 criteria total. Each criterion is scored 0-3. Categories total `/9`, the page totals `/90`.
 
 Load this for any `evaluate`. The scoring procedure, quick-mode crosswalk, and report format live in `evaluate.md`; this file is the criteria and the math.
 
