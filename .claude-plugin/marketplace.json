@@ -1,0 +1,15 @@
+{
+  "name": "renaissancerachel",
+  "owner": {
+    "name": "Rachel E. Miles",
+    "url": "https://github.com/renaissancerachel"
+  },
+  "plugins": [
+    {
+      "name": "essentials",
+      "source": "./plugins/essentials",
+      "description": "Everyday context-management skills: a plain-language summarizer and a pre-compaction checkpoint.",
+      "version": "0.1.0"
+    }
+  ]
+}

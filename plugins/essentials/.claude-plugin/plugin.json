@@ -1,0 +1,9 @@
+{
+  "name": "essentials",
+  "description": "Two everyday skills: a plain-language summarizer and a pre-compaction checkpoint.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rachel E. Miles",
+    "url": "https://github.com/renaissancerachel"
+  }
+}
