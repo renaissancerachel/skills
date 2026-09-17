@@ -69,6 +69,7 @@ The goal: one clone of this repo is the single source of truth, and every machin
 | simple | Summarize everything in plain terms with just enough context to decide, and spell out what's needed back | Stable |
 | checkpoint | Get the session to a clean stopping point before the context window compacts | Stable |
 | rux | Rapid 30-criterion UX heuristic audit of a site or page | Stable |
+| decks family | Build presentations from a real PowerPoint template (router + setup, build, check); design-system-agnostic via a per-project `DECK-SYSTEM.md` | Stable |
 
 ### Coming soon
 
@@ -82,7 +83,7 @@ The goal: one clone of this repo is the single source of truth, and every machin
 The repo follows the Claude Code marketplace format so it can be installed as a plugin:
 
 - `.claude-plugin/marketplace.json` is the marketplace manifest. It names the marketplace (`renaissancerachel`) and lists the plugins it offers.
-- `plugins/` holds each plugin (`essentials`, `ux`, with more being added).
+- `plugins/` holds each plugin (`essentials`, `ux`, `workspace-cleanup`, `decks`, with more being added).
 - `plugins/<plugin>/.claude-plugin/plugin.json` is that plugin's manifest.
 - `plugins/<plugin>/skills/` holds the skills (each in its own folder with a `SKILL.md`).
 - `plugins/<plugin>/commands/` holds the matching slash commands.

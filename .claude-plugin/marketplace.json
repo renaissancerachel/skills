@@ -22,6 +22,12 @@
       "source": "./plugins/workspace-cleanup",
       "description": "Keep a workspace's context fresh: audit, doc-diet, config-bootstrap, asset-reconcile, and migration-plan, behind one router.",
       "version": "0.1.0"
+    },
+    {
+      "name": "decks",
+      "source": "./plugins/decks",
+      "description": "Build presentations from a real PowerPoint template, never one-off slides: deck router + deck-setup, deck-build, deck-check.",
+      "version": "0.1.0"
     }
   ]
 }
