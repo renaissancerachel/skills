@@ -53,5 +53,5 @@ slides:
   from the layout, always.
 - Any string value ending in an image extension goes in as a picture; into a `picture` slot
   directly, into any other slot fitted inside its bounds.
-- Placeholders you don't fill are removed from that slide so no prompt text survives.
+- Unfilled placeholders are removed from that slide, so prompt text never survives.
 - A `.pptx` can be the template too; its existing slides are dropped before building.

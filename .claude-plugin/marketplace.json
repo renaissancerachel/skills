@@ -27,7 +27,7 @@
       "name": "decks",
       "source": "./plugins/decks",
       "description": "Build presentations from a real PowerPoint template, never one-off slides: deck router + deck-setup, deck-build, deck-check.",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ]
 }
