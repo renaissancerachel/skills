@@ -28,6 +28,12 @@
       "source": "./plugins/decks",
       "description": "Build presentations from a real PowerPoint template, never one-off slides: deck router + deck-setup, deck-build, deck-check.",
       "version": "0.1.1"
+    },
+    {
+      "name": "deep-docs",
+      "source": "./plugins/deep-docs",
+      "description": "Author Layer-1 deep docs (concept substrate): a router carrying the doctrine — leveling test, two axes of depth, source rubric — that dispatches to writing, reviewing, or a no-map brainstorm, and personalizes to any author.",
+      "version": "0.1.0"
     }
   ]
 }

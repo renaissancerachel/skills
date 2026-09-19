@@ -3,3 +3,7 @@ Thumbs.db
 node_modules/
 *.log
 .env
+
+# Author-local personalization for deep-docs (and any skill) — never ship
+personal.md
+**/personal.md
