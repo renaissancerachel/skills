@@ -20,7 +20,11 @@ Structural problems first — don't polish prose a bridging fix is about to rewo
    must earn its place against a core question or the premise, so flag anything extraneous (depth
    piling onto a side-topic, a passage that serves no question) for cut or relocation to a named
    sibling. **Precise terminology:** this is a deep doc, so name each load-bearing concept with its
-   exact term on first use, reuse that term, and revisit prior-lesson terms by name.
+   exact term on first use, reuse that term, and revisit prior-lesson terms by name. **Lands on
+   "Why it matters":** the explanation closes with the standard Why-it-matters beat — one
+   human-level takeaway that gathers the doc's threads; a doc that trails off on a deferral or a
+   pointer has under-landed. Every "thing people miss" is delivered in a section or that close,
+   never stranded or duplicated in the misconceptions sidebar.
 3. **Fresh-subagent bridging review.** A subagent that didn't write it reads cold **against the
    leveling test** and returns a seam list: do the beats connect, does the arc build, does the
    title's promise land, is any thread dropped or picked up cold, does difficulty spike out of
