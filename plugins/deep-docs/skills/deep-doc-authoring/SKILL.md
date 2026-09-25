@@ -59,3 +59,9 @@ model for that") in the third person instead.
 
 The task files carry the source rubric, the workflow, the review checklist, and the anti-patterns.
 Open only the one you need.
+
+**Every gate leaves evidence, not an assertion.** Invoking the named tools — searches, skills,
+fresh-subagent reads — MUST happen; a claim that a step ran is not the step, and a review is not
+"done" (to the author, in a commit, or in `STATUS.md`) until a gate ledger backs every line. This is
+the rule the review checklist is built on, because asserting a gate is always cheaper than running
+it.
