@@ -16,11 +16,20 @@ writing workflow.
 - **External primaries only for what the author's material genuinely lacks.** Fact-check at writing
   time (web search), cite exact IDs (author/year, arXiv or DOI). Invent nothing; flag a genuine gap
   rather than pad.
+- **Deliver the planned sources and definitions.** The stream README (and the doc's own Sources
+  plan) may map specific concepts to intended sources — a definition to a named reference, a claim
+  to a primary. Consult that map *while drafting* and pull each one in; a definition or source the
+  plan slated that never lands in the body is a gap, not an option. This is a deep doc: it defines
+  its core terms outright rather than assuming the reader holds them. If the plan names a source you
+  choose to swap (e.g. a different public definition), that is fine — just deliver a definition, and
+  record the source you used.
 - **Attribution asymmetry:**
   - *The author's own work* → quote **verbatim** only when the exact wording is the asset (a
     signature line, a spoken moment a paraphrase would flatten, an already-public line, a canonical
     definition). Otherwise absorb and re-voice with no "she/he says" scaffolding — the substrate
-    *is* their material, so running self-attribution is obnoxious. Mark verbatim-eligible sources by
+    *is* their material, so running self-attribution is obnoxious, and naming the author in the
+    third person in the body ("Rachel," "her book," "her glossary") breaks the first-person voice
+    the doc is written in. Mark verbatim-eligible sources by
     the author's verbatim rule (see `../personal.md`) in the Sources list; no running inline
     citation. **Self-quotes are a substrate device — strip them when adapting down to Layer 2.**
   - *External primaries* → the reverse: don't quote them, re-voice the claim and cite (author, year).
