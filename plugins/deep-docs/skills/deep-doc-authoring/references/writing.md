@@ -43,6 +43,9 @@ writing workflow.
    pulling new material.
 2. **Ground, then build.** Define each load-bearing noun in-doc before leaning on it. Order the
    beats so each earns the next; the opening functions as an on-ramp within the doc's own level.
+   **Every section stands on its own:** never point to another section ("mentioned above," "more
+   on that below," "described in 'X'"); when a term or example returns, restate what it is in a
+   short clause. Terms reused by name and a top-of-doc roadmap are fine.
 3. **Use the author's existing bridges.** Pull their analogies, orderings, and framings from their
    material. Author new connective tissue only where theirs has a real gap — and flag the gap.
 4. **Defer out loud.** Deferring detail is fine; do it explicitly, with a hook, to a *named* sibling

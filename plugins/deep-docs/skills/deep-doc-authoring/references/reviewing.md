@@ -81,11 +81,17 @@ in gate 2 so the terminal cold read rarely has to force a big reorder. The fresh
    land, is any thread dropped or picked up cold, does difficulty spike out of place. **Read
    referents cold, not from whole-doc memory.** The failure mode is a reviewer who holds the entire
    doc, hits a back-reference, silently supplies the antecedent from ten paragraphs up, and rates the
-   flow "clean." Defeat it: check each section and paragraph *opener* in isolation — every
-   back-reference (a demonstrative like "that freeze," "this shift," "those abilities," or "the same
-   X") must resolve to something in the *immediately preceding* section. If its antecedent sits more
-   than one section back, that is a stale referent — flag it, even if you personally remember what it
-   means.
+   flow "clean." Defeat it: **every section must stand on its own.** Read each section as if it were
+   the first thing the reader saw, and check each paragraph against only the section it sits in.
+   Flag, even if you personally remember what it means:
+   - any pointer to another section of the same doc, by name ("the models from 'What generative AI
+     changed'," "described in 'Patterns, not a memory'") or by position ("mentioned above," "more on
+     that below," "as described earlier," "the rest of this doc");
+   - any back-reference whose antecedent lives in a different section (a demonstrative like "that
+     freeze," "those lists," "the same X," or "then," at a section opener). Across paragraphs
+     within one section, a reference is fine only if the paragraph just before it supplies it.
+   The fix is a short restating clause, never a re-taught section. Reusing a defined term by name,
+   [[links]] to other docs, and the top-of-doc roadmap are fine.
 
    Because this read runs LAST, on the final text, **a reorder cannot strand it** — there is no later
    edit left to invalidate it. Two properties make this gate real:
@@ -143,9 +149,11 @@ Each is a concrete thing to catch:
   underserved (e.g. image-generation mechanics crowding a doc about how training works).
 - **Ungrounded load-bearing noun** — the piece leans on a word it never defines.
 - **One story told as two** — two sections that are the same idea from two angles, never joined.
-- **Stale referent** — a demonstrative or back-reference ("that freeze," "this shift," "those
-  abilities") whose antecedent sits more than one section back. A whole-doc reader supplies it
-  silently; a genuinely cold reader hits a wall ("what freeze?"). Reorders are the usual cause.
+- **Section that leans on another section** — a pointer to another section ("mentioned above,"
+  "described in 'X'," "more on that below") or a back-reference whose antecedent lives in a
+  different section ("that freeze," "those lists"). A whole-doc reader supplies it silently; a
+  reader who lands on that section cold hits a wall ("what freeze?"). Reorders and voice cuts are
+  the usual causes. Every section stands on its own.
 - **Planned-but-undefined term** — a concept the README's source map slated for a definition that
   the body leans on but never actually defines. A deep doc that skips its own planned definitions
   has under-delivered, even when the prose reads fine.
