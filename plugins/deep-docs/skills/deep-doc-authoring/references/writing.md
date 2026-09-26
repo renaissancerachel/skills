@@ -33,6 +33,19 @@ writing workflow.
     the author's verbatim rule (see `../personal.md`) in the Sources list; no running inline
     citation. **Self-quotes are a substrate device — strip them when adapting down to Layer 2.**
   - *External primaries* → the reverse: don't quote them, re-voice the claim and cite (author, year).
+- **First-person lines trace to the author's own material.** Any "I" line about what the author
+  says, teaches, or has said ("I used to suggest…", "In earlier talks I've described…") needs a
+  line reference to the author's own material. Never turn third-party or internal material into the
+  author's first person, and never blend it into their words.
+- **Verify provenance labels; don't inherit them.** A source map or registry can mislabel a saved
+  third-party file as the author's own. Before treating a source as the author's voice, confirm the
+  label (ask the author when unsure); every doc that uses a mislabeled source inherits the error.
+- **An imported author line must fit the doc's terms.** When a verbatim or near-verbatim author line
+  comes in, check its terms against the doc's own definitions (a book's loose "the system learned"
+  can contradict a doc that defines "system" as model plus app). Re-voice the term, not the idea.
+- **Perishable specifics go to the living layer.** Provider settings, durations, defaults, and which
+  models support what change month to month. The body states the durable principle with its
+  qualification ("on many models…"); the dated, sourced specifics live in the stream's living files.
 - **Never-cite parents are situational, not standing.** Sometimes a topic has an internal parent
   that must never be cited (a licensed guide, a partner's deck) — re-voice, and trace every claim to
   a public primary. Note it when it applies; it isn't a permanent feature of every doc.

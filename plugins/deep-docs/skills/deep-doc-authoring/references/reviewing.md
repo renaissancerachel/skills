@@ -33,8 +33,11 @@ in gate 2 so the terminal cold read rarely has to force a big reorder. The fresh
    was re-mined THIS pass** — an actual read or extraction this pass, not "I remember it" — for both
    what the doc cites and what it *should* draw on but doesn't; **every external primary is
    fact-checked THIS pass with a live WebSearch**, exact IDs recorded (author/year + arXiv/DOI);
-   nothing fabricated. *Gate: a claim with no trace, or an external ID not actually searched this
-   pass, stops the pass.* **Evidence:** the re-mine (subagent id, or the files read this pass) and
+   nothing fabricated. **Every first-person line about what the author says or has said traces to the
+   author's own material with a line reference; provenance labels in maps and registries are
+   verified, not inherited; "verbatim" labels in Sources still match the body after edits.**
+   *Gate: a claim with no trace, an external ID not actually searched this pass, or a first-person
+   line with no author-material trace, stops the pass.* **Evidence:** the re-mine (subagent id, or the files read this pass) and
    the list of IDs searched. (Full rule set: [`writing.md`](writing.md) source rubric.)
 
 2. **Grounding, leveling & premise.** Every load-bearing noun grounded in-doc; mechanism depth
@@ -46,7 +49,11 @@ in gate 2 so the terminal cold read rarely has to force a big reorder. The fresh
    must earn its place against a core question or the premise, so flag anything extraneous (depth
    piling onto a side-topic, a passage that serves no question) for cut or relocation to a named
    sibling. **Precise terminology:** name each load-bearing concept with its exact term on first use,
-   reuse that term, and revisit prior-lesson terms by name. **Lands on "Why it matters":** the
+   reuse that term, and revisit prior-lesson terms by name. **One term, one meaning:** a word that
+   means two things in one doc (a "draw" as one word pick and as a whole reply) gets split. Watch
+   for two framings of one idea stacked back to back. **Recheck the claim after any trim:** every
+   phrase of `claim:` and every core question still has a body sentence delivering it, and the body
+   never contradicts the claim. **Lands on "Why it matters":** the
    explanation closes with the standard Why-it-matters beat — one human-level takeaway that gathers
    the doc's threads; a doc that trails off on a deferral or a pointer has under-landed. Every "thing
    people miss" is delivered in a section or that close, never stranded or duplicated in the
@@ -90,6 +97,8 @@ in gate 2 so the terminal cold read rarely has to force a big reorder. The fresh
    - any back-reference whose antecedent lives in a different section (a demonstrative like "that
      freeze," "those lists," "the same X," or "then," at a section opener). Across paragraphs
      within one section, a reference is fine only if the paragraph just before it supplies it.
+   - any self-reference in the body ("this file," "this doc," "this chapter"), including in
+     roadmap sentences; state things directly instead.
    The fix is a short restating clause, never a re-taught section. Reusing a defined term by name,
    [[links]] to other docs, and the top-of-doc roadmap are fine.
 
@@ -149,6 +158,14 @@ Each is a concrete thing to catch:
   underserved (e.g. image-generation mechanics crowding a doc about how training works).
 - **Ungrounded load-bearing noun** — the piece leans on a word it never defines.
 - **One story told as two** — two sections that are the same idea from two angles, never joined.
+- **Words put in the author's mouth** — a first-person line ("I used to suggest…", "In earlier
+  talks I've described…") that traces to third-party or internal material, or blends it into the
+  author's words.
+- **Inherited provenance** — a source map or registry labels third-party material as the author's
+  own, and the doc treats it as their voice.
+- **One word, two meanings** — a load-bearing term used in two senses in the same doc.
+- **Perishable fact in the body** — a provider setting, duration, or default stated as settled in
+  the body; it belongs in the living layer with a date and source.
 - **Section that leans on another section** — a pointer to another section ("mentioned above,"
   "described in 'X'," "more on that below") or a back-reference whose antecedent lives in a
   different section ("that freeze," "those lists"). A whole-doc reader supplies it silently; a
