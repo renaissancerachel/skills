@@ -236,6 +236,7 @@ def build(outline_path: str, out=None, template=None, master=None) -> str:
             if val is None or (isinstance(val, str) and not val.strip()):
                 continue
             kind = ph_kind(ph)
+            ph_idx = ph.placeholder_format.idx  # read before fill: insert_picture swaps the element
             if kind == "picture" or (isinstance(val, str) and val.lower().endswith(IMAGE_EXT)):
                 fill_picture(ph, str(val), base)
             elif kind in ("object",) and not isinstance(val, (str, list)):
@@ -243,13 +244,13 @@ def build(outline_path: str, out=None, template=None, master=None) -> str:
                 continue
             else:
                 fill_text(ph, val)
-            filled.add(ph.placeholder_format.idx)
+            filled.add(ph_idx)
 
         if sd.get("notes"):
             slide.notes_slide.notes_text_frame.text = str(sd["notes"])
 
         if not sd.get("keep_empty"):
-            for ph in phs:
+            for ph in list(slide.placeholders):  # fresh: filled pictures replaced their elements
                 if ph.placeholder_format.idx in filled or ph_kind(ph) == "slide_number":
                     continue
                 el = ph._element

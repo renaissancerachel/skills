@@ -56,7 +56,10 @@ is an **error** listing that layout's real names; the fix goes in the outline. N
 
 An `object` slot stays empty. A diagram the content genuinely needs goes inside that slot's
 bounds via python-pptx in theme colours (`MSO_THEME_COLOR.ACCENT_n`) and theme fonts: the one
-place drawing is allowed, and `deck-check` still reports any hex it finds there.
+place drawing is allowed, and `deck-check` still reports any hex it finds there. Draw with
+`scripts/diagram_kit.py` (`box`, `arrow`, and `draw(deck, {title: fn})`, which matches Framework
+slides by Title and gives a caption-less slide's caption area to the diagram); the lesson's own
+diagrams script holds only its diagram functions.
 
 ## Step 5 — Check, then hand over
 
